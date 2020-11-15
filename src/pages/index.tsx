@@ -2,7 +2,7 @@ import React, { ChangeEvent, useEffect, useState } from 'react'
 import Lolly from '../components/Lolly'
 import {useForm} from 'react-hook-form'
 import {useQuery,gql, useMutation} from '@apollo/client'
-
+import shortid  from 'shortid'
 
 const ALL_DATA = gql`
 

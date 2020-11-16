@@ -4,7 +4,8 @@ const dotenv = require('dotenv')
 dotenv.config()
 const adminClient =  new fauna.Client({secret:process.env.FAUNA_KEY});
 
-const {ApolloServer,gql} = require('apollo-server-lambda')
+const {ApolloServer,gql} = require('apollo-server-lambda');
+
 
 const typeDefs = gql`
 
@@ -52,6 +53,21 @@ const resolvers = {
   Mutation:{
     addLolly:async(e,{input})=>{
 
+      console.log(input,'server')
+      const result = await adminClient.query(
+        q.Create(
+          q.Collection('VirtualLolly'),
+          {data:{ 
+            to: input.to,
+          from: input.from,
+          message: input.message,
+          topcolor: input.topcolor,
+          middlecolor: input.middlecolor,
+          bottomcolor: input.bottomcolor,
+          link: input.link
+        }}
+        )
+      )
       return {
         allData:"Success"
       }

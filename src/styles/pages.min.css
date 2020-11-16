@@ -1,5 +1,80 @@
-.colortag{
+.colortag {
     border: 0px!important;
     border-radius: 30px;
-    
+    background-color: transparent!important;
+    height: 30px;
+    width: 30px;
+
+    /* margin-top: -10px; */
+    /* margin-left: -10px; */
+    /* cursor: Pointer; */
+
+}
+
+.index-title {
+    /* font-weight: 300; */
+    color: #fff;
+    border-bottom-style: none;
+    text-shadow: #fa73d9 0 0 8px;
+    font-size: 64px !important;
+    font-family: 'Yellowtail'!important;
+}
+body {
+    background-color: #21212b;
+}
+.sugar {
+    color: #fff;
+    border-bottom-style: none;
+    text-shadow: #fa73d9 0 0 8px;
+    font-size: 30px !important;
+    font-family: "Sofia"!important;
+}
+.inputtag {
+
+    color: #fff;
+    border-bottom-style: none;
+    text-shadow: #fa73d9 0 0 8px;
+    font-size: 20px !important;
+    font-family: "Sofia"!important;
+}
+.divtag {
+    background-color: rgba(0,0,0,.2);
+    padding: 30px;
+    border-radius: 10px;
+    color: #fff;
+    border-bottom-style: none;
+    text-shadow: #fa73d9 0 0 8px;
+    font-size: 20px !important;
+    font-family: 'Bai Jamjuree'!important;
+    box-shadow: 5px 10px 8px 10px #888888!important;
+
+}
+.btndesign {
+    border-color: white;
+    color: white;
+    text-shadow: #fa73d9 0 0 8px;
+
+    font-family: 'Bai Jamjuree'!important;
+    box-shadow: 1px 0px 10px 5px #ca75ca!important;
+
+
+}
+.btndesign:hover{
+    border-color: white;
+    background-color: rgba(230, 84, 243, 0.39);
+}
+.lollysize{
+    height: 40px!important;
+    width: 40px!important;
+}
+.page-footerr{
+
+    color: white;
+    text-shadow: #fa73d8c9 0 0 8px;
+    margin-top: 40px!important;
+
+}
+.spinnerdesign{
+    height: 100px;
+    width:  100px;
 }

@@ -16,6 +16,8 @@
   "license": "0BSD",
   "dependencies": {
     "@apollo/client": "^3.2.5",
+    "@types/react-helmet": "^6.1.0",
+    "@types/shortid": "^0.0.29",
     "@typescript-eslint/eslint-plugin": "^4.7.0",
     "@typescript-eslint/parser": "^4.7.0",
     "apollo-server-lambda": "^2.19.0",

@@ -5,30 +5,12 @@ const fauna = require('faunadb')
 const q = fauna.query
 
 
-module.exports.createPages = async({actions,graphql})=>{
-
-
+exports.onCreatePage = async ({page,actions})=>{
 
     const {createPage} = actions
 
-    const adminClient = new fauna.Client({secret:process.env.FAUNA_KEY})
-
-    const result = await adminClient.query(
-
-        q.Map(
-          q.Paginate(q.Documents(q.Collection('VirtualLolly'))),
-          q.Lambda(x=>q.Get(x))
-        )
-      )
-      result.data.forEach((value)=>{
-        
-        createPage({
-            path:`/Lolly/${value.data.link}`,
-            component: path.resolve('./src/templates/Lolly.tsx'),
-            context:{
-                data:value
-            }
-        })
-      })        
-
+    if(page.path.match(/^\/VirtualLolly/)){
+        page.matchPath = "/VirtualLolly/*"
+        createPage(page)
+    }
 }

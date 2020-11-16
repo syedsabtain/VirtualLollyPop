@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 export default()=>{
-
+  
     return(
 
         <div className='container mt-5 text-center mb-5'>
@@ -20,11 +20,11 @@ export default()=>{
                     <div className='col-md-12 mx-auto'>
 
                         <span className='lollysize'>
-                            <Lolly top={"#473410"} middle={"#57b52c"} bottom={"#6f88d3"}></Lolly>
+                            <Lolly top={"#70cbdb"} middle={"#43d6c5"} bottom={"#deaa43"}></Lolly>
                         </span>
-                        <Lolly top={"#471010"} middle={ "#b52c82" } bottom={"#d36fc5"}></Lolly>
-                        <Lolly top={"#103c47"} middle={"#2cacb5"} bottom={"#6fd3c7"}></Lolly>
-                        <Lolly top={"#201cf2"} middle={"#b2c526"} bottom={"#d62e2e"}></Lolly>
+                        <Lolly top={"#db7070"} middle={"#d66843"} bottom={"#df7d49"}></Lolly>
+                        <Lolly top={"#70dbb2"} middle={"#43d68a"} bottom={"#49dfdc"}></Lolly>
+                        <Lolly  top={"#dbd470"}  middle={"#d6cc43"} bottom={"#db7070"}></Lolly>
                     </div>
 
                 </div>
